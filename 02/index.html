@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 02</title>
+</head>
+
+<body>
+
+    <div>Ejercicio 02</div>
+    <script>
+
+       
+
+
+        var animales = new Array('perro', 'gato', 'caballo', 'rinoceronte')
+
+        function removeProperty(obj, prop) {
+            for (var i = 0; i < obj.length; i++) {
+                if (obj[i] == prop) {
+                    delete obj[i]
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+
+        removeProperty(animales, 'gato');
+
+
+        var perro = { 'raza': 'galgo', 'peso': '20', 'color': 'pardo' };
+        function removePropertyDos(obj, prop) {
+            // add lines
+            for (key in obj) {
+                if (key == prop) {
+                    console.log('true')
+                } else {
+                    console.log('false')
+                }
+            }
+            return null;
+        }
+        removePropertyDos(perro, 'raza')
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 05</title>
+</head>
+<body>
+    <h2>Ejercicio 5</h2>
+
+    <script>
+        var numero  = new Array(3,4,5,5);
+
+
+       
+        function ordenar(numeros){
+            for(var i=1; i<numeros.length;i++){
+                for(var j=0; j<(numeros.length-i);j++){
+                    if(numeros[j]>numeros[j+1]){
+                        k=numeros[j+1];
+                        numeros[j+1]=numeros[j];
+                        numeros[j]=k;
+                    }
+                }
+            }
+            return numeros
+        }
+
+
+       var numOrdenados= ordenar(numero)
+       for(var i=0; i<numOrdenados.length;i++){
+           document.write(numOrdenados[i])
+       }
+       
+    </script>
+</body>
+</html>
